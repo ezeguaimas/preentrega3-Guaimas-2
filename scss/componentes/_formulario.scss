@@ -1,0 +1,51 @@
+.form-group-propio {
+    margin-bottom: 1.5rem;
+}
+
+.bigicon {
+    margin-bottom: 1rem;
+    font-size: 35px;
+    color: $color_5;
+    text-shadow: 0 0 0.2em $color_4, 0 0 0.2em $color_4, 0 0 0.2em $color_4,
+        0 0 0.2em $color_1;
+}
+
+.input-propio {
+    resize: none;
+    background-color: white;
+
+    &:focus {
+        background-color: whitesmoke;
+        color: $color_4;
+        border-color: $color_7;
+        box-shadow: 0 0 0 0.25rem rgba($color_1, 0.3);
+    }
+
+    &:hover {
+        border-color: $color_7;
+        box-shadow: 0 0 0 0.25rem rgba($color_3, 0.3);
+    }
+}
+
+.btn-input-propio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    input {
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form-background {
+        background-image: url(../images/estatua-justicia.webp);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+    .col-md-8-propio {
+        width: 50%;
+    }
+}

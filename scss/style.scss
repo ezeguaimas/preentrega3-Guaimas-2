@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import "./base/colores";
+@import "./base/variables";
+@import "./componentes/header";
+@import "./componentes/navbar";
+@import "./componentes/footer";
+@import "./componentes/formulario";
+
+@keyframes effect {
+
+	20%,
+	100% {
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+	}
+
+	0%,
+	10% {
+		width: 55px;
+		height: 55px;
+		font-size: 35px;
+	}
+
+	5% {
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.carousel-item-propio {
+		img {
+			max-width: 720px;
+			max-height: 480px;
+		}
+	}
+
+	.areas-img-h3 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.carousel-item-propio {
+		img {
+			width: 100%;
+		}
+	}
+
+	.areas-img-h3 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.areas-img-h3 {
+		font-size: 1.5rem;
+	}
+
+	.parrafo-area-areas {
+		font-size: 0.8rem;
+	}
+}
+
+.global-container {
+	background-image: linear-gradient(to right, $color_7, $color_8);
+}
+
+.section-index-carousel {
+	display: flex;
+	justify-content: center;
+	max-height: 480px;
+}
+
+.borde-contraste {
+	color: $color_4;
+	text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+		0 0 0.2em white;
+}
+
+.h1-index {
+	text-align: center;
+	font-family: $font-family_2;
+	font-weight: 600;
+	margin: 0;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.h2-main {
+	text-align: center;
+	font-family: $font-family_2;
+	font-size: 250%;
+	padding-top: 3%;
+}
+
+.h2-propio {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+	font-size: 140%;
+}
+
+main {
+	p {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 5vh;
+		padding-top: 0;
+		font-family: $font-family_1;
+		font-size: large;
+		text-align: justify;
+	}
+}
+
+.practicas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.area-practica-areas {
+	display: flex;
+	position: relative;
+	display: inline-block;
+
+	img {
+		width: 100%;
+		margin-bottom: 2rem;
+
+		&:hover {
+			filter: blur(5px) brightness(0.2) sepia(1);
+		}
+	}
+}
+
+.areas-img-h3 {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	text-align: center;
+	color: $color_4;
+	text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+		0 0 0.2em white;
+}
+
+.parrafo-area-areas {
+	display: flex;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	color: $color_4;
+	text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white,
+		0 0 0.2em white;
+	text-align: justify;
+	font-style: italic;
+}
+
+.h1-titulo {
+	text-align: center;
+	margin: 3%;
+}
+
+.parrafos-section {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 5vh;
+	padding-top: 0;
+	font-family: $font-family_1;
+	font-size: large;
+	text-align: justify;
+
+	img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	p {
+		margin-top: 3vh;
+	}
+}
+
+.h3-section {
+	text-align: center;
+}
+
+.equipo {
+	img {
+		width: 40vw;
+		margin: auto;
+		border-radius: 10%;
+		filter: sepia(1);
+
+	}
+}
+
+.integrantes {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-propia {
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.08);
+	margin: 1rem;
+	padding: 1rem;
+	max-width: 540px;
+}
+
+.btn-propio {
+	color: $color_5;
+	background-color: $background-color_2;
+	border-color: $color_6;
+
+	&:hover {
+		color: $color_6;
+		background-color: $background-color_1;
+		border-color: $color_6;
+	}
+
+	&:active {
+		color: $color_6;
+		background-color: $background-color_2;
+		border-color: $color_6;
+		box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	}
+
+	&:disabled {
+		color: $color_6;
+		background-color: $background-color_2;
+		border-color: $color_6;
+	}
+}
+
+.ir-arriba {
+	display: none;
+	background-repeat: no-repeat;
+	font-size: 33px;
+	color: $color_4;
+	opacity: 60%;
+	cursor: pointer;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+
+	&:hover {
+		opacity: 100%;
+		color: $color_4;
+	}
+}
+
+.whatsapp-button {
+	position: fixed;
+	bottom: 15px;
+	left: 15px;
+	z-index: 99;
+	background-color: $color_2;
+	border-radius: 50%;
+	color: $color_5;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	-webkit-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+	box-shadow: 0 0 25px -6px rgba(0, 0, 0, 1);
+	animation: effect 3s 5 ease-in;
+
+	&:hover {
+		background-color: $color_5;
+		color: $color_2;
+		transform: scale(1.2);
+	}
+}

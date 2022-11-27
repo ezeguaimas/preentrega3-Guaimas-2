@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-fila {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, #898989, #ffffea);
+}
+
+.llamar i {
+  font-size: 50px;
+  color: darkred;
+}
+
+.iconos-redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.iconos-redes ul {
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.iconos-redes ul li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
+}
+.iconos-redes ul li:hover {
+  transform: scale(1.2);
+}
+.iconos-redes ul li:nth-child(1):hover i {
+  color: #4267b2;
+}
+.iconos-redes ul li:nth-child(2):hover i {
+  color: #c13584;
+}
+.iconos-redes ul li:nth-child(3):hover i {
+  color: #1da1f2;
+}
+.iconos-redes ul li:nth-child(4):hover i {
+  color: #25d366;
+}
+.iconos-redes ul li:nth-child(5):hover i {
+  color: #db4437;
+}
+.iconos-redes ul li i {
+  padding: 3px;
+  font-size: 45px;
+  color: #37374d;
+}
+
+.logo-top img {
+  width: 50%;
+  margin: 0;
+  padding: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .brand-propia img {
+    display: none;
+  }
+  .llamar {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo-top {
+    display: none;
+  }
+  .top-fila {
+    display: none;
+  }
+}
+.nav-list-propia {
+  justify-content: flex-end;
+}
+
+.nav-propia a {
+  color: #3d3c42;
+}
+.nav-propia a:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
+  color: darkred;
+}
+
+.brand-propia img {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 576px) {
+  .nav-list-propia li {
+    padding: 5px;
+  }
+  .nav-list-propia li a {
+    font-size: 140%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: bold;
+  }
+  .nav-propia {
+    background-color: #f2f2f2;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-list-propia a {
+    font-family: "Inter Tight", sans-serif;
+  }
+  .nav-propia {
+    background-image: linear-gradient(to right, #898989, #ffffea);
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-propia a:hover {
+    transform: scale(1.01);
+  }
+}
+footer {
+  background-color: #3d3c42;
+}
+
+.iframe-footer {
+  overflow: hidden;
+}
+
+.btn-rrss-footer {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border: 1px black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.btn-rrss-footer:hover {
+  filter: brightness(1.2);
+}
+
+.btn-fb {
+  background-color: #4267b2;
+}
+.btn-fb:hover {
+  background-color: #4267b2;
+  border-color: 2px black;
+}
+
+.btn-twt {
+  background-color: #1da1f2;
+}
+.btn-twt:hover {
+  background-color: #1da1f2;
+  border-color: 2px black;
+}
+
+.btn-inst {
+  background-color: #c13584;
+}
+.btn-inst:hover {
+  background-color: #c13584;
+  border-color: 2px black;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-group-propio {
+  margin-bottom: 1.5rem;
+}
+
+.bigicon {
+  margin-bottom: 1rem;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em darkred;
+}
+
+.input-propio {
+  resize: none;
+  background-color: white;
+}
+.input-propio:focus {
+  background-color: whitesmoke;
+  color: black;
+  border-color: #898989;
+  box-shadow: 0 0 0 0.25rem rgba(139, 0, 0, 0.3);
+}
+.input-propio:hover {
+  border-color: #898989;
+  box-shadow: 0 0 0 0.25rem rgba(55, 55, 77, 0.3);
+}
+
+.btn-input-propio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-input-propio input {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form-background {
+    background-image: url(../images/estatua-justicia.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  .col-md-8-propio {
+    width: 50%;
+  }
+}
+@keyframes effect {
+  20%, 100% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  0%, 10% {
+    width: 55px;
+    height: 55px;
+    font-size: 35px;
+  }
+  5% {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .carousel-item-propio img {
+    max-width: 720px;
+    max-height: 480px;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item-propio img {
+    width: 100%;
+  }
+  .areas-img-h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .areas-img-h3 {
+    font-size: 1.5rem;
+  }
+  .parrafo-area-areas {
+    font-size: 0.8rem;
+  }
+}
+.global-container {
+  background-image: linear-gradient(to right, #898989, #ffffea);
+}
+
+.section-index-carousel {
+  display: flex;
+  justify-content: center;
+  max-height: 480px;
+}
+
+.borde-contraste {
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+
+.h1-index {
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.h2-main {
+  text-align: center;
+  font-family: "Vollkorn", serif;
+  font-size: 250%;
+  padding-top: 3%;
+}
+
+.h2-propio {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 140%;
+}
+
+main p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5vh;
+  padding-top: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+
+.practicas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.area-practica-areas {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+.area-practica-areas img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.area-practica-areas img:hover {
+  filter: blur(5px) brightness(0.2) sepia(1);
+}
+
+.areas-img-h3 {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+}
+
+.parrafo-area-areas {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: black;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white, 0 0 0.2em white;
+  text-align: justify;
+  font-style: italic;
+}
+
+.h1-titulo {
+  text-align: center;
+  margin: 3%;
+}
+
+.parrafos-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 5vh;
+  padding-top: 0;
+  font-family: "Inter Tight", sans-serif;
+  font-size: large;
+  text-align: justify;
+}
+.parrafos-section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.parrafos-section p {
+  margin-top: 3vh;
+}
+
+.h3-section {
+  text-align: center;
+}
+
+.equipo img {
+  width: 40vw;
+  margin: auto;
+  border-radius: 10%;
+  filter: sepia(1);
+}
+
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-propia {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 540px;
+}
+
+.btn-propio {
+  color: white;
+  background-color: #3d3c42;
+  border-color: #3d3c42;
+}
+.btn-propio:hover {
+  color: #3d3c42;
+  background-color: #f2f2f2;
+  border-color: #3d3c42;
+}
+.btn-propio:active {
+  color: #3d3c42;
+  background-color: #3d3c42;
+  border-color: #3d3c42;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-propio:disabled {
+  color: #3d3c42;
+  background-color: #3d3c42;
+  border-color: #3d3c42;
+}
+
+.ir-arriba {
+  display: none;
+  background-repeat: no-repeat;
+  font-size: 33px;
+  color: black;
+  opacity: 60%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.ir-arriba:hover {
+  opacity: 100%;
+  color: black;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 25px -6px rgb(0, 0, 0);
+  -moz-box-shadow: 0 0 25px -6px rgb(0, 0, 0);
+  box-shadow: 0 0 25px -6px rgb(0, 0, 0);
+  animation: effect 3s 5 ease-in;
+}
+.whatsapp-button:hover {
+  background-color: white;
+  color: #25d366;
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

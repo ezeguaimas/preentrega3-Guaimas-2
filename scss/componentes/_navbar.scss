@@ -1,0 +1,62 @@
+.nav-list-propia {
+	justify-content: flex-end;
+}
+
+.nav-propia {
+	a {
+		color: $color_6;
+
+		&:hover {
+			transform: scale(1.2);
+			transition: all 0.4s;
+			color: $color_1;
+		}
+	}
+}
+
+.brand-propia {
+	img {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.nav-list-propia {
+		li {
+			padding: 5px;
+
+			a {
+				font-size: 140%;
+				font-family: $font-family_1;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.nav-propia {
+		background-color: $background-color_1;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.nav-list-propia {
+		a {
+			font-family: $font-family_1;
+		}
+	}
+
+	.nav-propia {
+		background-image: linear-gradient(to right, $color_7, $color_8);
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.nav-propia {
+		a {
+			&:hover {
+				transform: scale(1.01);
+			}
+		}
+	}
+}

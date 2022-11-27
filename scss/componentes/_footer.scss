@@ -1,0 +1,51 @@
+footer {
+	background-color: $background-color_2;
+}
+
+.iframe-footer {
+	overflow: hidden;
+}
+
+.btn-rrss-footer {
+	width: 3rem;
+	height: 3rem;
+	padding: 0.5rem;
+	border: 1px black;
+	text-align: center;
+	font-size: 1.3rem;
+
+	&:hover {
+		filter: brightness(1.2);
+	}
+}
+
+.btn-fb {
+	background-color: $color_f;
+
+	&:hover {
+		background-color: $color_f;
+		border-color: 2px black;
+	}
+}
+
+.btn-twt {
+	background-color: $color_t;
+
+	&:hover {
+		background-color: $color_t;
+		border-color: 2px black;
+	}
+}
+
+.btn-inst {
+	background-color: $color_i;
+
+	&:hover {
+		background-color: $color_i;
+		border-color: 2px black;
+	}
+}
+
+.copyright {
+	background-color: rgba(0, 0, 0, 0.2);
+}
